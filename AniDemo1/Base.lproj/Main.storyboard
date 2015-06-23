@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hzd-A4-Mgh">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="jeV-Rk-tYh">
+            <objects>
+                <navigationController id="hzd-A4-Mgh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hyr-G6-Dht">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="WLY-4T-vrq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmp-1l-vVY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-72" y="455"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWR-hE-cgt">
+                                <rect key="frame" x="250" y="127" width="101" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="6sT-84-A6K"/>
+                                    <constraint firstAttribute="height" constant="30" id="TmH-Sj-Weu"/>
+                                </constraints>
+                                <state key="normal" title="WangYiWave">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushWangYiWaveVC:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tr1-Zp-3OJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsN-De-zTX">
+                                <rect key="frame" x="250" y="190" width="101" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="O71-eQ-Tnp"/>
+                                    <constraint firstAttribute="height" constant="30" id="ayd-kl-zrw"/>
+                                </constraints>
+                                <state key="normal" title="3DSideMenu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="push3DSideMenuVC:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="d8R-xf-ehG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pzl-EI-dXa">
+                                <rect key="frame" x="237" y="242" width="127" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dbp-UZ-mae"/>
+                                    <constraint firstAttribute="width" constant="127" id="zWP-mD-aVp"/>
+                                </constraints>
+                                <state key="normal" title="FunnyRotateCircle">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushFunnyRotateCircleVC:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="R6h-U0-h1b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbw-u6-rtq">
+                                <rect key="frame" x="250" y="297" width="101" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Hf5-WF-mCd"/>
+                                    <constraint firstAttribute="width" constant="101" id="ePG-cd-vzj"/>
+                                </constraints>
+                                <state key="normal" title="3DSideMenu2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="push3DSideMenuVC2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZSO-4t-3Vc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pzl-EI-dXa" firstAttribute="centerX" secondItem="FsN-De-zTX" secondAttribute="centerX" id="0Zo-yk-Wgd"/>
+                            <constraint firstAttribute="centerX" secondItem="jbw-u6-rtq" secondAttribute="centerX" id="0xE-a8-hQM"/>
+                            <constraint firstItem="FsN-De-zTX" firstAttribute="top" secondItem="cWR-hE-cgt" secondAttribute="bottom" constant="33" id="9V5-iJ-aZp"/>
+                            <constraint firstItem="Pzl-EI-dXa" firstAttribute="centerX" secondItem="cWR-hE-cgt" secondAttribute="centerX" id="9e9-yp-SKq"/>
+                            <constraint firstItem="jbw-u6-rtq" firstAttribute="top" secondItem="Pzl-EI-dXa" secondAttribute="bottom" constant="25" id="Aen-u7-CfX"/>
+                            <constraint firstAttribute="centerX" secondItem="cWR-hE-cgt" secondAttribute="centerX" id="BMg-bN-Uqp"/>
+                            <constraint firstItem="cWR-hE-cgt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="63" id="SgJ-Bc-mjA"/>
+                            <constraint firstItem="jbw-u6-rtq" firstAttribute="top" secondItem="Pzl-EI-dXa" secondAttribute="bottom" constant="25" id="Ufz-53-cL5"/>
+                            <constraint firstItem="jbw-u6-rtq" firstAttribute="top" secondItem="Pzl-EI-dXa" secondAttribute="bottom" constant="19" id="WwU-0S-gXx"/>
+                            <constraint firstAttribute="centerX" secondItem="jbw-u6-rtq" secondAttribute="centerX" id="Y1P-47-sGe"/>
+                            <constraint firstItem="Pzl-EI-dXa" firstAttribute="top" secondItem="FsN-De-zTX" secondAttribute="bottom" constant="22" id="hTD-z5-g0I"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ufz-53-cL5"/>
+                                <exclude reference="WwU-0S-gXx"/>
+                                <exclude reference="Y1P-47-sGe"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="EhI-DW-sgh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="638" y="455"/>
+        </scene>
+    </scenes>
+</document>
