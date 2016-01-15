@@ -1,19 +1,18 @@
-# AnimationSharePartOne
-The first Internal animation sharing
+# 三个动画效果的实现
 
-Three animation demos have been provided.
+第一个是QRefresh,实现了https://dribbble.com/shots/2064446-Refresh 的设计.
 
-The first is QRefresh,which was inspired by the design of https://dribbble.com/shots/2064446-Refresh.
+<img src="https://github.com/daixunry/AnimationSharePartOne/blob/master/refresh.gif" width = "400px" height = "300px" alt="图片名称" align=center />
 
- ![image](https://github.com/daixunry/AnimationSharePartOne/blob/master/refresh.gif)
 
-The second one imitated wangYiNews’s personal page.
+第二个模仿了网易新闻个人空间的水波效果
 
- ![image](https://github.com/daixunry/AnimationSharePartOne/blob/master/waveGif.gif)
+<img src="https://github.com/daixunry/AnimationSharePartOne/blob/master/waveGif.gif" width = "400px" height = "122px" alt="图片名称" align=center />
 
-The third one come from a popular cool 3D sideBar in http://www.raywenderlich.com/87268/3d-effect-taasky-swift,different realization.
 
- ![image](https://github.com/daixunry/AnimationSharePartOne/blob/master/sideBar3d.gif)
+第三个是一个一度比较火的3D sideBar效果， 来自与http://www.raywenderlich.com/87268/3d-effect-taasky-swift ,但是完全不同的实现思路。
+
+<img src="https://github.com/daixunry/AnimationSharePartOne/blob/master/sideBar3d.gif" width = "400px" height = "710px" alt="图片名称" align=center />
 
 
 
