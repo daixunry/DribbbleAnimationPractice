@@ -92,14 +92,14 @@
     baseAni.fromValue = @(M_PI*2);
     baseAni.toValue = @(0);
     baseAni.duration = 2;
-    baseAni.repeatCount = 100;
+    baseAni.repeatCount = NSIntegerMax;
     [_parLayer addAnimation:baseAni forKey:@"ro1"];
     
     CAKeyframeAnimation *aniChangePath1 = [CAKeyframeAnimation animationWithKeyPath:@"path"];
     aniChangePath1.values = @[(__bridge id)_startArrowPath1.CGPath,(__bridge id)_endArrowPath1.CGPath,(__bridge id)_endArrowPath1.CGPath];
     aniChangePath1.keyTimes = @[@(0.45),@.75,@.95];
     aniChangePath1.autoreverses = YES;
-    aniChangePath1.repeatCount = 100;
+    aniChangePath1.repeatCount = NSIntegerMax;
     aniChangePath1.duration = 1;
     
     [_layerArrow1 addAnimation:aniChangePath1 forKey:@"changePath"];
