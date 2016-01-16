@@ -50,11 +50,22 @@
     [self.layer addSublayer:_layer2];
 }
 
-- (void)drawRect:(CGRect)rect
+- (void)wave
 {
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetStrokeColorWithColor(context, [UIColor whiteColor].CGColor);
+    _link = [CADisplayLink displayLinkWithTarget:self selector:@selector(doAni)];
+    [_link addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+}
 
+- (void)stop
+{
+    [_link invalidate];
+    _link = nil;
+}
+
+- (void)doAni
+{
+    _offset += _speed;
+    
     CGMutablePathRef pathRef = CGPathCreateMutable();
     CGFloat startY = _waveHeight*sinf(_offset*M_PI/_waveWidth);
     CGPathMoveToPoint(pathRef, NULL, 0, startY);
@@ -91,25 +102,6 @@
     _layer2.path  =_path2.CGPath;
     _layer2.fillColor = [UIColor lightGrayColor].CGColor;
     CGPathRelease(pathRef2);
-
-}
-
-- (void)wave
-{
-    _link = [CADisplayLink displayLinkWithTarget:self selector:@selector(doAni)];
-    [_link addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
-}
-
-- (void)stop
-{
-    [_link invalidate];
-    _link = nil;
-}
-
-- (void)doAni
-{
-    _offset += _speed;
-    [self setNeedsDisplay];
 }
 
 
