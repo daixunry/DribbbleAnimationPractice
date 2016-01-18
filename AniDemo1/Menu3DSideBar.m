@@ -97,7 +97,7 @@
         CATransform3D contaTran2 = CATransform3DMakeTranslation(_containHelperView.frame.size.width - 100, 0, 0);
         _containView.layer.transform = CATransform3DConcat(contaTran, contaTran2);
         self.containerView.transform = CGAffineTransformMakeTranslation(_containHelperView.frame.size.width, 0);
-        
+
         return 0;
     }
     return 0;
@@ -147,7 +147,7 @@
     tranAni.fromValue = [NSValue valueWithCATransform3D:_containView.layer.transform];
     tranAni.toValue = [NSValue valueWithCATransform3D:tran];
     tranAni.duration = .5;
-    [_containView.layer addAnimation:tranAni forKey:@"11"];
+    [_containView.layer addAnimation:tranAni forKey:@"openForContainAni"];
     _containView.layer.transform = tran;
     _containHelperView.layer.transform = tran;
     
@@ -156,7 +156,7 @@
     tranAni2.fromValue = [NSValue valueWithCATransform3D:_containerView.layer.transform];
     tranAni2.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeTranslation(100, 0, 0)];
     tranAni2.duration = .5;
-    [_containerView.layer addAnimation:tranAni2 forKey:@"22"];
+    [_containerView.layer addAnimation:tranAni2 forKey:@"openForContainerAni"];
     _containerView.layer.transform = CATransform3DMakeTranslation(100, 0, 0);
     
     [UIView animateKeyframesWithDuration:.5 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeCubic animations:^{
